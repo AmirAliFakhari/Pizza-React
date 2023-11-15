@@ -12,7 +12,7 @@ function CartOverview() {
         <span>{totalCartQuantity} pizzas</span>
         <span>{totalCartPrice}$</span>
       </p>
-      <Link to="/cart">Open cart &rarr;</Link>
+      <Link to="/Pizza-React/cart">Open cart &rarr;</Link>
     </div>
   );
 }
