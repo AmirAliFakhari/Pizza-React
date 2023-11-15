@@ -4,6 +4,6 @@ import eslint from "vite-plugin-eslint"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: "/Pizza-React/",
+  base: "/Pizza-React/",
   plugins: [react(), eslint()],
 })
