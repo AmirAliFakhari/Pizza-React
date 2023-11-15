@@ -12,30 +12,31 @@ import AppLayout from "./ui/AppLayout";
 
 const router = createBrowserRouter([
   {
+    path: import.meta.env.DEV ? "/", : "/Pizza-React/",
     element: <AppLayout />,
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
       {
-        path: "/menu",
+        path: "menu",
         element: <Menu />,
         loader: menuLoader,
         errorElement: <Error />,
       },
       {
-        path: "/Cart",
+        path: "Cart",
         element: <Cart />,
       },
       {
-        path: "/order/new",
+        path: "order/new",
         element: <CreateOrder />,
         action: createOrderAction,
       },
       {
-        path: "/order/:orderId",
+        path: "order/:orderId",
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
