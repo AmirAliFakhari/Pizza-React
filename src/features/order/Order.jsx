@@ -3,9 +3,8 @@
 import { useEffect } from 'react';
 import { useFetcher, useLoaderData } from 'react-router-dom';
 import { getOrder } from '../../Services/apiRestaurant';
-import {
+import formatCurrency, {
   calcMinutesLeft,
-  formatCurrency,
   formatDate,
 } from '../../utils/helpers';
 import OrderItem from './OrderItem';
