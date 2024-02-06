@@ -3,12 +3,10 @@
 import { useEffect } from 'react';
 import { useFetcher, useLoaderData } from 'react-router-dom';
 import { getOrder } from '../../Services/apiRestaurant';
-import formatCurrency, {
-  calcMinutesLeft,
-  formatDate,
-} from '../../utils/helpers';
+import { calcMinutesLeft, formatDate } from '../../utils/helpers';
 import OrderItem from './OrderItem';
 import UpdateOrder from './UpdateOrder';
+import formatCurrency from '../../utils/helpers';
 
 function Order() {
   const order = useLoaderData();
