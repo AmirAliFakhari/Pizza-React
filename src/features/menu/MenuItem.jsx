@@ -1,11 +1,7 @@
 import { formatCurrency } from '../../utils/helpers';
 import Button from '../../ui/Button';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  addItem,
-  getCurrentQuantityById,
-  getTotalCartQuantity,
-} from '../card/cartSlice';
+import { addItem, getCurrentQuantityById } from '../card/cartSlice';
 import DeleteItem from '../card/DeleteItem';
 import UpdateItemQuantity from '../card/UpdateItemQuantity';
 
